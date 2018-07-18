@@ -185,6 +185,7 @@ func handleDeletes(request []byte, bc *Blockchain) {
 
 }
 
+// Handle block Connection
 func handleConnection(conn net.Conn, bc *Blockchain) {
 	time.Sleep(time.Second)
 	request, err := ioutil.ReadAll(conn)
